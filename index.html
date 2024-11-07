@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Website</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="navbar">
+                <a href="#" class="logo">MyAgency</a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+<input type="checkbox" id="sidebarToggle" class="sidebar-checkbox">
+
+
+<label for="sidebarToggle" class="hamburger">&#9776;</label>
+
+
+<div class="sidebar">
+    <label for="sidebarToggle" class="close-btn">×</label>
+    <ul>
+        <li><a href="#home" onclick="document.getElementById('sidebarToggle').checked = false;">Home</a></li>
+        <li><a href="#about" onclick="document.getElementById('sidebarToggle').checked = false;">About</a></li>
+        <li><a href="#services" onclick="document.getElementById('sidebarToggle').checked = false;">Services</a></li>
+        <li><a href="#contact" onclick="document.getElementById('sidebarToggle').checked = false;">Contact</a></li>
+    </ul>
+</div>
+    </header>
+    
+
+    <section id="home" class="hero-section">
+        <h1>Welcome to My Agency</h1>
+        <p>Your satisfaction is our priority. We are a leading business dedicated to providing the best services for our clients, ensuring all your needs are met.</p>
+        <button class="hero-button">Get Started</button>
+    </section>
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>We have years of experience in our field and a commitment to excellent service, ensuring that our clients are always our top priority.</p>
+    </section>
+
+    
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div>Social Media Marketing </div>
+            <div>Search Engine Optimization</div>
+            <div>Email Marketing</div>
+        </div>
+    </section>
+
+    
+    <section class="testimonials-section">
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+        </section>
+<input type="radio" id="slide1" name="testimonial-slider" checked>
+<input type="radio" id="slide2" name="testimonial-slider">
+
+<div class="testimonial-slider">
+    <div class="testimonial-slides">
+        <label for="slide2" class="arrow left-arrow">&#10094;</label>
+        <p>"The best service I have experienced!" - John Wick</p>
+        <label for="slide2" class="arrow right-arrow">&#10095;</label>
+    </div>
+    <div class="testimonial-slides">
+        <label for="slide1" class="arrow left-arrow">&#10094;</label>
+        <p>"Professional and reliable." - Tony Shark</p>
+        <label for="slide1" class="arrow right-arrow">&#10095;</label>
+    </div>
+</div>
+    </section>
+
+   
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MyAgency. All Rights Reserved.</p>
+    </footer>
+    
+
+</body>
+</html>
